@@ -1,0 +1,16 @@
+name: Test Checkout on Self-Hosted Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-checkout:
+    runs-on: arc-runner-set
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Print working directory
+        run: |
+          echo "Checkout succeeded"
+          ls -la
