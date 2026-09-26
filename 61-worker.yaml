@@ -1,0 +1,23 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: "2026-02-15T09:51:34Z"
+  generation: 1
+  labels:
+    machineconfiguration.openshift.io/role: master
+  name: 99-master-chrony
+  resourceVersion: "257069"
+  uid: 9db525fe-de54-4d31-a87c-a6797c38f892
+spec:
+  config:
+    ignition:
+      version: 3.2.0
+    storage:
+      files:
+      - contents:
+          source: data:;base64,VGhpcyBpcyBkZXZyYWoK
+        mode: 420
+        overwrite: true
+        path: /etc/master
+        filesystem: root
+        overwrite: true
