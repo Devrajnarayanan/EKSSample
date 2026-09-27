@@ -16,7 +16,7 @@ spec:
       files:
       - contents:
           source: data:;base64,VGhpcyBpcyBkZXZyYWoK
-        mode: 420
+        mode: 422
         overwrite: true
         path: /etc/master
         filesystem: root
