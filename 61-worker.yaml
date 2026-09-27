@@ -2,6 +2,8 @@ apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
   creationTimestamp: "2026-02-15T09:51:34Z"
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
   generation: 1
   labels:
     machineconfiguration.openshift.io/role: master
